@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special for Dinda ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0, #ff99cc, #9575cd);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .album-wrapper {
+            position: relative;
+            width: 90%;
+            max-width: 380px;
+            z-index: 10;
+        }
+
+        .slide-container {
+            display: none;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            padding: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            animation: fadeEffect 0.8s;
+        }
+        @keyframes fadeEffect { from {opacity: 0} to {opacity: 1} }
+
+        .slide-container img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(240, 98, 146, 0.3);
+        }
+
+        .text-content h2 { color: #8e24aa; font-size: 1.3rem; margin: 20px 0 10px; }
+        .text-content p { color: #555; line-height: 1.6; font-size: 0.95rem; padding: 0 10px; }
+
+        /* NAVIGASI TOMBOL PANAH */
+        .nav-btn {
+            position: absolute;
+            top: 45%;
+            background: white;
+            color: #ff4d6d;
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.2rem;
+            z-index: 20;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .nav-btn:hover { background: #ff4d6d; color: white; }
+        .prev { left: -20px; }
+        .next { right: -20px; }
+
+        /* PEMUTAR MUSIK AESTHETIC */
+        .music-player {
+            position: fixed;
+            bottom: 30px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px 25px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            z-index: 100;
+        }
+        .play-btn {
+            background: #ff4d6d;
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .music-info { color: #8e24aa; font-size: 0.85rem; font-weight: bold; }
+
+        /* HUJAN LOVE */
+        .heart-fall {
+            position: fixed;
+            top: -20px;
+            user-select: none;
+            pointer-events: none;
+            z-index: 5;
+            animation: falling linear forwards;
+        }
+        @keyframes falling { to { transform: translateY(110vh) rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+    <div class="album-wrapper">
+        <button class="nav-btn prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="nav-btn next" onclick="plusSlides(1)">&#10095;</button>
+
+        <div class="slide-container">
+            <img src="FOTO1.jpeg" alt="Foto 1">
+            <div class="text-content">
+                <h2>First Moment ❤️</h2>
+                <p>"semua berawal dari gelang ini, dimana stasiun dikala itu awal aku melihatmu, aku melihat benih cinta mulai terlihat, senyum manis yang kamu tujukan padaku, membuat ku merasa aku orang paling beruntung di dunia ini, hal paling berkesan adalah gelang ini, aku akan selalu membawanya kemanapun aku pergi. dan gelang ini lebih berharga dari apapun.. karena apa?? karena disinilah aku mulai menjalani hidup yang penuh warna bersamamu..."</p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <img src="FOTO2.jpeg" alt="Foto 2">
+            <div class="text-content">
+                <h2>Our Journey ❤️</h2>
+                <p>"sayang.. makasi yaa.. kamu membawa ku ketempat yang indah dan berkesan, hal yang selalu aku nanti adalah pergi kemanapun bersamamu serta menciptakan momen paling berharga, bersamamu aku merasa bahagia dan penuh semangat dalam menjalani hari, stay with me okeii.. i miss u"</p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <img src="FOTO3.jpeg" alt="Foto 3">
+            <div class="text-content">
+                <h2>Always You ❤️</h2>
+                <p>"mereka romantis banget yaa, tatapannya bener bener tulus. ada yang tau ga siapa mereka??? shhttt...!!! jangan berisik, biarin mereka bahagia ya... jangan ganggu hubungan mereka yaaa" </p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <img src="FOTO4.jpeg" alt="Foto 4">
+            <div class="text-content">
+                <h2>Pure Love ❤️</h2>
+                <p>"kini mereka udaa tumbuh besar yaa, bahkan udah 2 tahun waktu foto itu diambil, mereka keren yaaaa..., tetap bertahan walau banyak ujian, langgeng yaa kaka kaka cantik dan ganteng"</p>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <img src="FOTO5.jpeg" alt="Foto 5">
+            <div class="text-content">
+                <h2>Happy Anniversary ❤️</h2>
+                <p>"slide di samping adalah lintas waktu yang kalian lalui, sekarang tepat 21 April 2026, dimana kilas ini dibuat, kalian hebattt... kalian luar biasa.. eh denger denger udah tunangan, apa uda nikah, haa??  dua-duanya?? kerennnnnnn... , buat siapapun yang baca, bilangin ke mereka, mereka bukti cinta yang sesungguhnya, dapet salam nih katanya dari si penulis dan pembuat web ini, isinya HAPPY ANNIVERSARY YANG KE 3 DINDA SAYANGKU.. I LOVE YOU MORE.."</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="music-player">
+        <button class="play-btn" id="playBtn">▶</button>
+        <div class="music-info">8 Letters ❤ ️</div>
+        <audio id="myAudio" loop>
+            <source src="MUSIK.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        const audio = document.getElementById("myAudio");
+        const playBtn = document.getElementById("playBtn");
+
+        // Fungsi Play/Pause
+        playBtn.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+                playBtn.innerHTML = "⏸";
+            } else {
+                audio.pause();
+                playBtn.innerHTML = "▶";
+            }
+        });
+
+        // Logika Slide
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            // Otomatis putar lagu pas klik panah pertama kali
+            if (audio.paused) {
+                audio.play();
+                playBtn.innerHTML = "⏸";
+            }
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide-container");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+
+        // Hujan Love
+        function createHearts() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart-fall');
+            heart.innerHTML = '❤️';
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            heart.style.fontSize = (Math.random() * 10 + 20) + "px";
+            heart.style.opacity = Math.random();
+            document.body.appendChild(heart);
+            setTimeout(() => { heart.remove(); }, 5000);
+        }
+        setInterval(createHearts, 300);
+    </script>
+</body>
+</html>
